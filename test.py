@@ -8,7 +8,7 @@ health = 50
 difficult = 1
 nmr_random = int(random.randint(10, 20) / difficult)
 
-health = (saude + nmr_random)
+health = (health + nmr_random)
 print(health)
 
 print (separator *30)
