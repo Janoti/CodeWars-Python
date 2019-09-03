@@ -1,0 +1,27 @@
+#!/usr/bin/python
+#coding: utf-8
+
+
+
+import consolemenu
+from consolemenu import *
+from consolemenu.items import *
+
+menu = ConsoleMenu("Seção de Tecnologia da Informação","CEP/FDC")
+
+menu_item = MenuItem ("Menu item")
+function_item = FunctionItem("Chama uma função", input, ["Escreva algo"])
+command_item = CommandItem("Executa comando", "touch hello.txt")
+
+selection_menu = SelectionMenu(["item1", "item2", "item3"])
+
+submenu_item = SubmenuItem("Submenu item", selection_menu, menu)
+
+menu.append_item(menu_item)
+menu.append_item(function_item)
+menu.append_item(command_item)
+menu.append_item(submenu_item)
+
+menu.show()
+
+
