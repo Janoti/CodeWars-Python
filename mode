@@ -1,0 +1,14 @@
+#Verifica se um numeor é multiplo de 3 ou 5 e faz a soma
+
+def ismultiple(num, mode):
+    return num % mode == 0
+
+
+def main():
+    sum = 0
+    for x in range(10):
+        if ismultiple(x, 3) or ismultiple(x, 5):
+            sum = sum + x
+    print(sum)
+
+main()
