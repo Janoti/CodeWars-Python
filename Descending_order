@@ -1,0 +1,4 @@
+
+def descending_order(num):
+    return(int(''.join(sorted(str(num), reverse = True))))
+#Recebe um numero, ordena de forma decrescente formando o maior numero possivel
