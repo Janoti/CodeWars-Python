@@ -1,0 +1,10 @@
+def dig_pow(n, p):
+    list2 = [int(x) for x in str(n)]
+    result = 0
+    for x in list2:
+        result += x**p
+        p += 1
+
+    k = result / n
+    print(k if k.is_integer() else -1)
+
