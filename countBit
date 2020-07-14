@@ -1,0 +1,18 @@
+#Trasnform a integer number in binary notation and sum qts of number 1
+
+def countBits(n):
+    if n >= 0:
+        n = list(bin(n))
+    else:
+        return("0")
+
+    sum = 0
+
+    for x in n:
+        if x == "1":
+            sum += 1
+    return(sum)
+
+########################
+With 1 line of code, without verify if the number is positive
+   return bin(n).count("1")
